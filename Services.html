@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Shraddha's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            font-size: 1.04rem;
+            color: rgb(130, 130, 214);
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+        .services-container {
+            max-width: 80vw;
+            margin: 80px auto;
+            padding: 40px;
+        }
+        .services-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        .services-header h1 {
+            font-size: 3rem;
+            color: rgb(174, 108, 237);
+            margin-bottom: 20px;
+        }
+        .services-header p {
+            font-size: 1.2rem;
+            color: gray;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+        .service-card {
+            background: rgb(18, 18, 62);
+            padding: 40px;
+            border-radius: 15px;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(174, 108, 237, 0.1), transparent);
+            transition: 0.5s;
+        }
+        .service-card:hover::before {
+            left: 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: rgb(174, 108, 237);
+            box-shadow: 0 10px 30px rgba(174, 108, 237, 0.3);
+        }
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: rgb(174, 108, 237);
+        }
+        .service-card h3 {
+            color: rgb(130, 130, 214);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        .service-card p {
+            color: rgb(200, 200, 200);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .service-card ul {
+            list-style: none;
+            color: gray;
+        }
+        .service-card ul li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .service-card ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: rgb(174, 108, 237);
+            font-weight: bold;
+        }
+        .cta-section {
+            text-align: center;
+            padding: 60px 40px;
+            background: rgb(18, 18, 62);
+            border-radius: 15px;
+            margin-top: 80px;
+        }
+        .cta-section h2 {
+            font-size: 2.5rem;
+            color: rgb(174, 108, 237);
+            margin-bottom: 20px;
+        }
+        .cta-section p {
+            font-size: 1.2rem;
+            color: gray;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            padding: 15px 40px;
+            background: rgb(45, 22, 66);
+            color: white;
+            border: 2px solid rgb(174, 108, 237);
+            border-radius: 6px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .cta-button:hover {
+            background: rgb(174, 108, 237);
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: rgb(27, 22, 27);
+            margin-top: 100px;
+        }
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul {
+            list-style: none;
+        }
+        .footer > div {
+            width: 223px;
+        }
+        .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Shraddha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="services-container">
+            <div class="services-header">
+                <h1>My Services</h1>
+                <p>Transforming ideas into digital reality</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Frontend Development</h3>
+                    <p>Creating clean, interactive, and user-friendly web interfaces.</p>
+                    <ul>
+                        <li>React.js applications</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript ES6+</li>
+                        <li>Responsive design</li>
+                        <li>Cross-browser compatibility</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>Building modern web applications with clean code.</p>
+                    <ul>
+                        <li>Responsive websites</li>
+                        <li>MERN Stack applications</li>
+                        <li>Database integration</li>
+                        <li>Performance optimization</li>
+                        <li>Modern web standards</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Responsive Design</h3>
+                    <p>Ensuring your website works perfectly on all devices.</p>
+                    <ul>
+                        <li>Mobile-first approach</li>
+                        <li>Tablet optimization</li>
+                        <li>Desktop layouts</li>
+                        <li>Touch-friendly interfaces</li>
+                        <li>Fast loading times</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🗄️</div>
+                    <h3>Database Management</h3>
+                    <p>Efficient data handling and storage solutions.</p>
+                    <ul>
+                        <li>SQL databases</li>
+                        <li>MongoDB</li>
+                        <li>Data modeling</li>
+                        <li>Query optimization</li>
+                        <li>Database design</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI/UX Implementation</h3>
+                    <p>Translating designs into functional interfaces.</p>
+                    <ul>
+                        <li>Design to code conversion</li>
+                        <li>User interface development</li>
+                        <li>Interactive elements</li>
+                        <li>Smooth animations</li>
+                        <li>Accessible design</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📸</div>
+                    <h3>Nature Photography</h3>
+                    <p>Capturing beautiful moments through the lens.</p>
+                    <ul>
+                        <li>Nature photography</li>
+                        <li>Creative composition</li>
+                        <li>Photo editing</li>
+                        <li>Visual storytelling</li>
+                        <li>Portfolio creation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's work together to bring your ideas to life</p>
+                <a href="contact.html"><button class="cta-button">Get In Touch</button></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="first-footer">
+                <h3>Shraddha's Developer Portfolio</h3>
+            </div>
+            <div class="second-footer">
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="third-footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="fourth-footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright&#169;shraddhasportfolio.com | All rights reserved
+        </div>
+    </footer>
+</body>
+</html>

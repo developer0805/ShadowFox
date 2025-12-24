@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Shraddha's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            font-size: 1.04rem;
+            color: rgb(130, 130, 214);
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+        .about-container {
+            max-width: 80vw;
+            margin: 80px auto;
+            padding: 40px;
+        }
+        .about-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .about-header h1 {
+            font-size: 3rem;
+            color: rgb(174, 108, 237);
+            margin-bottom: 20px;
+        }
+        .about-header p {
+            font-size: 1.2rem;
+            color: gray;
+        }
+        .about-content {
+            display: flex;
+            gap: 60px;
+            margin-bottom: 80px;
+            align-items: center;
+        }
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+        .about-image img {
+            width: 80%;
+            border-radius: 10px;
+            border: 3px solid rgb(174, 108, 237);
+        }
+        .about-text {
+            flex: 1;
+        }
+        .about-text h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: rgb(130, 130, 214);
+        }
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: rgb(200, 200, 200);
+        }
+        .skills-section {
+            margin-top: 80px;
+        }
+        .skills-section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: rgb(174, 108, 237);
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .skill-card {
+            background: rgb(18, 18, 62);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+            border: 2px solid transparent;
+        }
+        .skill-card:hover {
+            transform: translateY(-10px);
+            border-color: rgb(174, 108, 237);
+        }
+        .skill-card h3 {
+            color: rgb(130, 130, 214);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        .skill-card p {
+            color: gray;
+        }
+        hr {
+            border: 0;
+            background: rgb(130, 130, 214);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+        footer {
+            background-color: rgb(27, 22, 27);
+            margin-top: 100px;
+        }
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul {
+            list-style: none;
+        }
+        .footer > div {
+            width: 223px;
+        }
+        .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Shraddha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about-container">
+            <div class="about-header">
+                <h1>About Me</h1>
+                <p>Get to know more about my journey and skills</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="Assets/code.jpg" alt="About Shraddha">
+                </div>
+                <div class="about-text">
+                    <h2>Hello! I'm Shraddha</h2>
+                    <p>
+                        I'm a frontend developer who enjoys creating clean and functional web interfaces. 
+                        My interest in technology drives me to learn and build better solutions.
+                    </p>
+                    <p>
+                        Currently working as a Web Developer Intern at ShadowFox. I previously 
+                        completed my MERN Stack internship at Webstack Academy.
+                    </p>
+                    <p>
+                        Outside of coding, I enjoy nature photography and exploring new technologies.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="skills-section">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Frontend Development</h3>
+                        <p>HTML, CSS, JavaScript, React.js - Creating responsive and interactive user interfaces</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Agile Methodology</h3>
+                        <p>Collaborative project management and iterative development practices</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Database Management</h3>
+                        <p>SQL, MongoDB - Designing and implementing efficient database solutions</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Nature Photography</h3>
+                        <p>Capturing beautiful moments in nature through creative composition and lighting</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Responsive Design</h3>
+                        <p>Mobile-first approach, cross-browser compatibility, and modern UI/UX principles</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Version Control</h3>
+                        <p>Git & GitHub - Collaborative development and code management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="first-footer">
+                <h3>Shraddha's Developer Portfolio</h3>
+            </div>
+            <div class="second-footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="third-footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="fourth-footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright&#169;shraddhasportfolio.com | All rights reserved
+        </div>
+    </footer>
+</body>
+</html>
