@@ -217,23 +217,28 @@
         
         @media (max-width: 768px) {
             nav {
-                flex-direction: column;
+                flex-direction: row;
                 height: auto;
-                padding: 15px 0;
+                padding: 15px 10px;
+                justify-content: space-between;
             }
             
             nav ul {
-                flex-direction: column;
-                gap: 10px;
-                margin-top: 15px;
+                flex-direction: row;
+                gap: 5px;
+                margin-top: 0;
             }
             
             nav ul li {
-                margin: 5px 0;
+                margin: 0 8px;
+            }
+            
+            nav ul li a {
+                font-size: 0.85rem;
             }
             
             .left {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
             
             .contact-container {
