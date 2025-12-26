@@ -208,14 +208,7 @@
             padding: 20px;
         }
         
-        /* Responsive Design for Mobile */
-        @media (max-width: 968px) {
-            .contact-content {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        @media (max-width: 768px) {
+     @media (max-width: 768px) {
             nav {
                 flex-direction: row;
                 height: auto;
@@ -241,68 +234,58 @@
                 font-size: 1rem;
             }
             
-            .contact-container {
+            .projects-container {
                 max-width: 95vw;
                 margin: 40px auto;
                 padding: 20px;
             }
             
-            .contact-header h1 {
+            .projects-header h1 {
                 font-size: 2rem;
             }
             
-            .contact-header p {
+            .projects-header p {
                 font-size: 1rem;
             }
             
-            .contact-content {
+            .projects-grid {
+                grid-template-columns: 1fr;
                 gap: 30px;
             }
             
-            .contact-info {
-                gap: 20px;
+            .project-card {
+                width: 100%;
             }
             
-            .info-card {
+            .project-content {
                 padding: 20px;
             }
             
-            .info-card h3 {
-                font-size: 1.3rem;
+            .project-card h3 {
+                font-size: 1.5rem;
             }
             
-            .info-card p {
-                font-size: 1rem;
-            }
-            
-            .contact-form {
-                padding: 30px 20px;
-            }
-            
-            .form-group label {
-                font-size: 1rem;
-            }
-            
-            .form-group input,
-            .form-group textarea {
-                padding: 12px;
+            .project-card p {
                 font-size: 0.95rem;
             }
             
-            .submit-btn {
-                padding: 12px;
-                font-size: 1rem;
+            .tech-stack {
+                gap: 8px;
             }
             
-            .social-links {
-                gap: 20px;
-                flex-wrap: wrap;
+            .tech-tag {
+                font-size: 0.85rem;
+                padding: 4px 12px;
             }
             
-            .social-btn {
-                width: 50px;
-                height: 50px;
-                font-size: 1.3rem;
+            .project-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .project-btn {
+                width: 100%;
+                text-align: center;
             }
             
             footer {
@@ -310,50 +293,57 @@
             }
             
             .footer {
-                flex-direction: column;
-                padding: 20px;
-                gap: 25px;
-                align-items: center;
+                flex-direction: row;
+                padding: 10px 15px;
+                gap: 15px;
+                justify-content: space-around;
+                flex-wrap: nowrap;
+                overflow-x: auto;
             }
             
             .footer > div {
-                width: 100%;
+                width: auto;
                 text-align: center;
+                flex: 0 0 auto;
+                min-width: 100px;
+            }
+            
+            .footer h3 {
+                font-size: 0.75rem;
+                margin-bottom: 8px;
             }
             
             .footer ul {
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 5px;
+            }
+            
+            .footer ul li a {
+                font-size: 0.7rem;
             }
             
             .footer-rights {
-                font-size: 0.9rem;
-                padding: 20px 10px;
+                font-size: 0.7rem;
+                padding: 10px 5px;
             }
         }
         
         @media (max-width: 480px) {
-            .contact-header h1 {
+            .projects-header h1 {
                 font-size: 1.8rem;
             }
             
-            .info-card h3 {
-                font-size: 1.2rem;
-                flex-direction: column;
-                gap: 10px;
+            .project-card h3 {
+                font-size: 1.3rem;
             }
             
-            .icon {
-                font-size: 1.5rem;
-            }
-            
-            .social-btn {
-                width: 45px;
-                height: 45px;
-                font-size: 1.2rem;
+            .project-image {
+                height: 200px;
+                font-size: 3rem;
             }
         }
+        
     </style>
 </head>
 <body>
