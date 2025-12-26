@@ -85,8 +85,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
-         
+            font-size: 4rem;
+            color: rgb(174, 108, 237);
         }
         .project-content {
             padding: 30px;
@@ -154,6 +154,125 @@
             color: gray;
             padding: 20px;
         }
+        
+        /* Responsive Design for Mobile */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 15px;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+            
+            .left {
+                font-size: 1.2rem;
+            }
+            
+            .projects-container {
+                max-width: 95vw;
+                margin: 40px auto;
+                padding: 20px;
+            }
+            
+            .projects-header h1 {
+                font-size: 2rem;
+            }
+            
+            .projects-header p {
+                font-size: 1rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .project-card {
+                width: 100%;
+            }
+            
+            .project-content {
+                padding: 20px;
+            }
+            
+            .project-card h3 {
+                font-size: 1.5rem;
+            }
+            
+            .project-card p {
+                font-size: 0.95rem;
+            }
+            
+            .tech-stack {
+                gap: 8px;
+            }
+            
+            .tech-tag {
+                font-size: 0.85rem;
+                padding: 4px 12px;
+            }
+            
+            .project-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .project-btn {
+                width: 100%;
+                text-align: center;
+            }
+            
+            footer {
+                padding: 20px 0;
+            }
+            
+            .footer {
+                flex-direction: column;
+                padding: 20px;
+                gap: 25px;
+                align-items: center;
+            }
+            
+            .footer > div {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .footer ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .footer-rights {
+                font-size: 0.9rem;
+                padding: 20px 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .projects-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .project-card h3 {
+                font-size: 1.3rem;
+            }
+            
+            .project-image {
+                height: 200px;
+                font-size: 3rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -164,8 +283,8 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="Services.html">Services</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
                 </ul>
             </div>
@@ -181,7 +300,7 @@
 
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image"><img src="Assets/homelyhub.jpeg"></div>
+                    <div class="project-image">🏠</div>
                     <div class="project-content">
                         <h3>HomelyHub</h3>
                         <p>A full-stack real estate platform built using the MERN stack. Users can browse properties, list their own homes, and connect with potential buyers or renters.</p>
@@ -192,8 +311,8 @@
                             <span class="tech-tag">Node.js</span>
                         </div>
                         <div class="project-links">
-                           <!--<a href="#" class="project-btn">View Demo</a>-->
-                            <a href="https://github.com/developer0805/HomelyHub" class="project-btn">GitHub</a>
+                            <a href="#" class="project-btn">View Demo</a>
+                            <a href="#" class="project-btn">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -210,8 +329,8 @@
                             <span class="tech-tag">Responsive</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://developer0805.github.io/ShadowFox/" class="project-btn">View Demo</a>
-                            <a href="https://github.com/developer0805/ShadowFox" class="project-btn">GitHub</a>
+                            <a href="#" class="project-btn">View Demo</a>
+                            <a href="#" class="project-btn">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -297,11 +416,11 @@
                 <h3>Shraddha's Developer Portfolio</h3>
             </div>
             <div class="second-footer">
-               <ul>
+                <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="Services.html">Services</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
                 </ul>
             </div>
@@ -309,8 +428,8 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="Services.html">Services</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
                 </ul>
             </div>
@@ -318,8 +437,8 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="Services.html">Services</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
                 </ul>
             </div>
