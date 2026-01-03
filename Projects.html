@@ -101,6 +101,16 @@
             line-height: 1.6;
             margin-bottom: 20px;
         }
+        .project-details {
+            color: rgb(180, 180, 180);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .project-details li {
+            margin-bottom: 8px;
+            margin-left: 20px;
+        }
         .tech-stack {
             display: flex;
             flex-wrap: wrap;
@@ -134,6 +144,16 @@
             background: rgb(174, 108, 237);
             transform: scale(1.05);
         }
+        .featured-badge {
+            display: inline-block;
+            background: rgb(174, 108, 237);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
         footer {
             background-color: rgb(27, 22, 27);
             margin-top: 100px;
@@ -155,7 +175,6 @@
             padding: 20px;
         }
         
-        /* Responsive Design for Mobile */
         @media (max-width: 768px) {
             nav {
                 flex-direction: row;
@@ -215,6 +234,10 @@
             
             .project-card p {
                 font-size: 0.95rem;
+            }
+            
+            .project-details {
+                font-size: 0.85rem;
             }
             
             .tech-stack {
@@ -313,114 +336,81 @@
         <div class="projects-container">
             <div class="projects-header">
                 <h1>My Projects</h1>
-                <p>A showcase of my recent work and accomplishments</p>
+                <p>Full-stack applications showcasing my technical skills and problem-solving abilities</p>
             </div>
 
             <div class="projects-grid">
+                <!-- HomelyHub Project -->
                 <div class="project-card">
                     <div class="project-image">🏠</div>
                     <div class="project-content">
-                        <h3>HomelyHub</h3>
-                        <p>A full-stack real estate platform built using the MERN stack. Users can browse properties, list their own homes, and connect with potential buyers or renters.</p>
+                        <span class="featured-badge">FEATURED PROJECT</span>
+                        <h3>HomelyHub - Property Rental Platform</h3>
+                        <p>A full-stack MERN property rental platform featuring property listings, user authentication, and booking system with payment simulation.</p>
+                        <ul class="project-details">
+                            <li>16 RESTful API endpoints for property, user, and booking management</li>
+                            <li>JWT authentication with password reset functionality</li>
+                            <li>MongoDB database with 3 collections and 5 optimized indexes</li>
+                        </ul>
                         <div class="tech-stack">
-                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
                             <span class="tech-tag">Express.js</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-btn">View Demo</a>
-                            <a href="#" class="project-btn">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">💼</div>
-                    <div class="project-content">
-                        <h3>Portfolio Website</h3>
-                        <p>A responsive personal portfolio website showcasing my skills, projects, and experience. Built with modern web technologies and optimized for all devices.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Responsive</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-btn">View Demo</a>
-                            <a href="#" class="project-btn">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">📝</div>
-                    <div class="project-content">
-                        <h3>Task Manager App</h3>
-                        <p>A productivity application for managing daily tasks and to-dos. Features include task categorization, priority levels, and deadline tracking.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
                             <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/developer0805/HomelyHub" class="project-btn" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carbon Footprint Tracker Project -->
+                <div class="project-card">
+                    <div class="project-image">🌱</div>
+                    <div class="project-content">
+                        <span class="featured-badge">FEATURED PROJECT</span>
+                        <h3>Carbon Footprint Tracker</h3>
+                        <p>A full-stack application tracking carbon emissions from daily activities with visual analytics and trend reports.</p>
+                        <ul class="project-details">
+                            <li>React.js frontend with interactive forms and data visualization</li>
+                            <li>Java backend with Maven for emission calculations</li>
+                            <li>MySQL database for activity logs and emission history</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Maven</span>
+                            <span class="tech-tag">MySQL</span>
                             <span class="tech-tag">REST API</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-btn">View Demo</a>
-                            <a href="#" class="project-btn">GitHub</a>
+                            <a href="https://github.com/developer0805/carbon-footprint-tracker" class="project-btn" target="_blank">GitHub</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Portfolio Website Project -->
                 <div class="project-card">
-                    <div class="project-image">🍔</div>
+                    <div class="project-image">💼</div>
                     <div class="project-content">
-                        <h3>Restaurant Landing Page</h3>
-                        <p>An elegant and modern landing page for a restaurant with menu display, online reservations, and contact information. Fully responsive design.</p>
+                        <span class="featured-badge">INTERNSHIP PROJECT</span>
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive personal portfolio website showcasing projects, skills, and experience with modern design.</p>
+                        <ul class="project-details">
+                            <li>Semantic HTML5 structure with modular CSS</li>
+                            <li>CSS Grid and Flexbox for responsive layouts</li>
+                            <li>Cross-browser compatibility and mobile-first design</li>
+                        </ul>
                         <div class="tech-stack">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Animations</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-btn">View Demo</a>
-                            <a href="#" class="project-btn">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">🎮</div>
-                    <div class="project-content">
-                        <h3>Interactive Game</h3>
-                        <p>A browser-based interactive game built with vanilla JavaScript. Features smooth animations, score tracking, and multiple difficulty levels.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Canvas API</span>
-                            <span class="tech-tag">CSS</span>
                             <span class="tech-tag">HTML5</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-btn">View Demo</a>
-                            <a href="#" class="project-btn">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">🌤️</div>
-                    <div class="project-content">
-                        <h3>Weather Dashboard</h3>
-                        <p>A real-time weather application that displays current conditions and forecasts. Integrates with weather APIs to provide accurate data.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">API Integration</span>
                             <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">Charts</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-btn">View Demo</a>
-                            <a href="#" class="project-btn">GitHub</a>
+                            <a href="https://github.com/developer0805/ShadowFox" class="project-btn" target="_blank">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -434,11 +424,11 @@
                 <h3>Shraddha's Developer Portfolio</h3>
             </div>
             <div class="second-footer">
-                <ul>
+               <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
                 </ul>
             </div>
@@ -446,8 +436,8 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
                 </ul>
             </div>
@@ -455,8 +445,8 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
                 </ul>
             </div>

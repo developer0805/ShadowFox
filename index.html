@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer's Portfolio </title>
+    <title>Developer's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
         *{
             margin:0;
@@ -69,7 +69,8 @@
          }
          .leftSection .buttons{
             padding: 50px 0;
-
+            display: flex;
+            gap: 20px;
          }
          .leftSection .btn{
             padding:12px 19px;
@@ -80,6 +81,8 @@
             font-size: 20px;
             cursor:pointer;
             transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
          }
          .leftSection .btn:hover{
             background: rgb(174, 108, 237);
@@ -233,6 +236,7 @@
                 width: 100%;
                 padding: 15px 20px;
                 font-size: 18px;
+                text-align: center;
             }
             
             .rightSection img {
@@ -371,8 +375,8 @@
                 Hi, My name is <span class="purple">Shraddha</span> and I am a passionate
                 <span id="element"></span>
                 <div class="buttons">
-                    <button class="btn">Download Resume</button>
-                    <button class="btn">Visit Github</button>
+                    <a href="Assets/Shraddha_Resume.pdf" class="btn" download>Download Resume</a>
+                    <a href="https://github.com/developer0805" class="btn" target="_blank">Visit Github</a>
                 </div>
             </div>
             <div class="rightSection">
@@ -387,19 +391,19 @@
                 <div class="vertical">
                     <img class="image-top" src="Assets/img.jpg" alt="mern">
                     <div class="vertical-title">
-                        Mern Stack Intern - Webstack Academy (Sept 2025 - Nov 2025)
+                        MERN Stack Intern - Webstack Academy (Sept 2025 - Nov 2025)
                     </div>
                     <div class="vertical-desc">
-                      Built full-stack web application(HomelyHub) using MongoDB, Express, React, and Node.js.
+                      Built full-stack web application (HomelyHub) using MongoDB, Express, React, and Node.js.
                     </div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="Assets/images1.png" alt="logo">
                     <div class="vertical-title">
-                        Web Developer Intern - ShadowFox (Dec 2025 - present)
+                        Web Developer Intern - ShadowFox (Dec 2025)
                     </div>
                     <div class="vertical-desc">
-                        Working on project-based development using HTML, CSS, and JavaScript.
+                        Built responsive portfolio website using HTML, CSS, and JavaScript.
                     </div>
                 </div>
             </div>
@@ -415,41 +419,32 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="Services.html">Services</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
                 </ul>
             </div>
             <div class="third-footer">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="Services.html">Services</a></li>
                     <li><a href="Projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://github.com/developer0805" target="_blank">GitHub</a></li>
                 </ul>   
             </div>
             <div class="fourth-footer">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="Services.html">Services</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="https://www.linkedin.com/in/shraddha-choche-20ab97374" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:shraddhachoche2020@gmail.com">Email</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-rights">
-         Copyright&#169;shraddhasportfolio.com | All rights reserved
+         Copyright &#169; shraddhasportfolio.com | All rights reserved
         </div>
     </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-  <script>
+    <script>
     var typed = new Typed('#element', {
-      strings: ['Frontend Developer','Web Developer','Nature Photographer'],
+      strings: ['Frontend Developer','MERN Stack Developer'],
       typeSpeed: 50,
     });
   </script>
-    
 </body>
 </html>
